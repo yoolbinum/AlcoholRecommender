@@ -1,0 +1,11 @@
+version: '2'
+services:
+    alcoholrecommender-postgresql:
+        image: postgres:9.6.5
+        # volumes:
+        #     - ~/volumes/jhipster/AlcoholRecommender/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=AlcoholRecommender
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
